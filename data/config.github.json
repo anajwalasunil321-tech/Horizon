@@ -1,17 +1,18 @@
 {
   "ai": {
     "analysis_concurrency": 5,
-    "api_key_env": "GOOGLE_API_KEY",
+    "api_key_env": "OPENAI_API_KEY",
     "enrichment_concurrency": 5,
     "languages": [
       "zh",
       "en"
     ],
     "max_tokens": 8192,
-    "model": "gemini-3.5-flash",
-    "provider": "gemini",
+    "model": "openai/gpt-oss-120b",
+    "provider": "openai",
     "temperature": 0.3,
-    "throttle_sec": 1
+    "throttle_sec": 1,
+    "base_url": "https://api.groq.com/openai/v1"
   },
   "collection": {
     "time_window_hours": 24
